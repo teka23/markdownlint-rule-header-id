@@ -24,7 +24,7 @@ module.exports = {
       const slugifyOptions = { lower: true, strict: true };
       const slugifiedHeader = slugify(line, slugifyOptions);
       const jekyllID = `{: #${slugifiedHeader} }`
-      if (!(/^\{\:\s*#[a-zA-Z\-]+.*\}$/.test(nextLine))) {
+      if (!(/^\{\:\s*#[a-zA-Z0-9\-]+.*\}$/.test(nextLine))) {
         onError({
           "lineNumber": lineNumber,
           "detail": `Expected kramdown ID attribute at next line: ${lineNumber + 1}. You can fix by inserting \`${jekyllID}\` to the next line`,

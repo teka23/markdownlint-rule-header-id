@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-rule-header-id",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A custom markdownlint rule for checking jekyll id for headings",
   "main": "rule.js",
   "author": "Anthony Shaw",
